@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="544d379" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.10.0">
+  <bpmn:collaboration id="Collaboration_14g1ein">
+    <bpmn:participant id="Participant_0a2yqlu" name="Bristol Regional Food Network" processRef="Process_0olqcya" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0olqcya" name="New BPMN diagram" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0wq8iyy</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_15i87ps" name="Manage product listings and inventory">
+      <bpmn:incoming>Flow_0wq8iyy</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Activity_1t7qabs" name="Manage customer orders" />
+    <bpmn:sequenceFlow id="Flow_0wq8iyy" sourceRef="StartEvent_1" targetRef="Activity_15i87ps" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_14g1ein">
+      <bpmndi:BPMNShape id="Participant_0a2yqlu_di" bpmnElement="Participant_0a2yqlu" isHorizontal="true">
+        <dc:Bounds x="152" y="80" width="778" height="440" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="202" y="282" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="129" y="143" width="79" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_15i87ps_di" bpmnElement="Activity_15i87ps">
+        <dc:Bounds x="290" y="260" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1t7qabs_di" bpmnElement="Activity_1t7qabs">
+        <dc:Bounds x="200" y="370" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0wq8iyy_di" bpmnElement="Flow_0wq8iyy">
+        <di:waypoint x="238" y="300" />
+        <di:waypoint x="290" y="300" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
