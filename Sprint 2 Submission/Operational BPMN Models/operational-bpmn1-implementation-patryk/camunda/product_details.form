@@ -1,0 +1,172 @@
+{
+  "components": [
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_13zrwrk",
+        "columns": null
+      },
+      "id": "Field_1odjz1w",
+      "key": "productName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Product Description",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1d23epz",
+        "columns": null
+      },
+      "id": "Field_06fo1fb",
+      "key": "description",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Product Category",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_17hjb2m",
+        "columns": null
+      },
+      "id": "Field_0ioollz",
+      "key": "category",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Price (£)",
+      "type": "number",
+      "layout": {
+        "row": "Row_1cd2vxn",
+        "columns": null
+      },
+      "id": "Field_1h6ljy8",
+      "key": "price",
+      "validate": {
+        "required": true,
+        "min": "0.01"
+      }
+    },
+    {
+      "label": "Quantity",
+      "type": "number",
+      "layout": {
+        "row": "Row_1i19lkk",
+        "columns": null
+      },
+      "id": "Field_1vgifly",
+      "key": "quantity",
+      "validate": {
+        "required": true,
+        "min": "1"
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Available From",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1bd9tkb",
+        "columns": null
+      },
+      "id": "Field_0am664a",
+      "key": "availabilityStartDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Available Until",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_13srbe3",
+        "columns": null
+      },
+      "id": "Field_1aafgiv",
+      "key": "availabilityEndDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Farm Origin",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0hggwbr",
+        "columns": null
+      },
+      "id": "Field_0j5hktf",
+      "key": "farmOrigin",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Allergens",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_16eiiz6",
+        "columns": null
+      },
+      "id": "Field_059swt4",
+      "key": "allergens",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Harvest Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_18euonl",
+        "columns": null
+      },
+      "id": "Field_19vrv8c",
+      "key": "harvestDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Best Before Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0t5zsx2",
+        "columns": null
+      },
+      "id": "Field_1d6n1e0",
+      "key": "bestBeforeDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Is Organic?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0om88rt",
+        "columns": null
+      },
+      "id": "Field_1ll97r1",
+      "key": "isOrganic"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0j9e2g0",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.53.0"
+  },
+  "schemaVersion": 19
+}
